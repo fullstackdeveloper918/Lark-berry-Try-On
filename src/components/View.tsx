@@ -71,7 +71,7 @@ const View = () => {
   const [isDragging, setIsDragging] = useState("");
   const [activeId, setActiveId] = useState("");
   const [ringType, setRingType] = useState("");
-  const [activeAddonPoint, setActiveAddonPoints] = useState('');
+  const [activeAddonPoints, setActiveAddonPoints] = useState<string[]>([]);
   console.log(product, "product");
   console.log(showDetails, "product");
   const [dragDataX, setDragDataY] = useState(0);
@@ -284,39 +284,37 @@ const View = () => {
         };
         if (data) {
           const validPositions = validPositionsByShape[data?.shape];
+      
           if (validPositions && validPositions.includes(over?.id.toString())) {
-            if (data?.shape === "circle") {
-              validPositions.forEach((circlePosition) => {
-                const addonPosition = validPositionsByShape["addon"][
-                  validPositions.indexOf(circlePosition)
-                ];
-                setActiveAddonPoints(addonPosition);
-              });
-            }
-            // setActiveAddonPoints(addonPosition);
+            const addonPosition = validPositionsByShape["addon"][
+              validPositions.indexOf(over?.id.toString())
+            ];
+            setActiveAddonPoints((prevPoints) => [...prevPoints, addonPosition]);
             addProducts(over?.id, data);
             setIsLoading(true);
             setShowDetails(true);
             setErrorMessagePoints("");
-          } else {
+          }else {
             setShowDetails(false);
             setIsLoading(false);
+            setActiveAddonPoints([]);
+      
+            let errorMessage = "";
+      
             if (data?.shape === "circle") {
-              setActiveAddonPoints('');
-              setErrorMessagePoints(
-                `Position the earring specifically on the highlighted circle of the ear to enhance your overall appearance.`
-              );
+              errorMessage =
+                "Position the earring specifically on the highlighted circle of the ear to enhance your overall appearance.";
             } else if (data?.shape === "dot") {
-              setErrorMessagePoints(
-                "Position the earring specifically on the highlighted dot of the ear to enhance your overall appearance."
-              );
+              errorMessage =
+                "Position the earring specifically on the highlighted dot of the ear to enhance your overall appearance.";
             } else if (data?.shape === "addon") {
-              setErrorMessagePoints(
-                "Place the earring on a highlighted area of the ear to curate your look."
-              );
+              errorMessage =
+                "Place the earring on a highlighted area of the ear to curate your look.";
             }
+      
+            setErrorMessagePoints(errorMessage);
           }
-
+        
           setTimeout(() => {
             setIsLoading(false);
           }, 2000);
@@ -9129,7 +9127,7 @@ const View = () => {
                     size === "large"
                       ? "translate(5px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(9px, 4px) rotate(-3deg)"
+                      ? "translate(8px, 5px) rotate(5deg)"
                       : "translate(5px, -6px) rotate(0deg)";
                   width =
                     size === "large"
@@ -17007,10 +17005,10 @@ const View = () => {
           case "BRUSHED":
             transform =
               size === "large"
-                ? "translate3d(17px, -10px, 0px)"
+                ? "translate3d(13px, -7px, 0px)"
                 : size === "small"
                 ? "translate3d(8px, -2px, 0px)"
-                : "translate3d(15px, -8px, 0px)";
+                : "translate3d(13px, -7px, 0px)";
   
             width =
               size === "large" ? "24px" : size === "small" ? "22px" : "22px";
@@ -17803,10 +17801,25 @@ const View = () => {
                               position: "absolute",
                               top: `${p.y}px`,
                               left: `${p.x}px`,
+
                               border:
-                                isDragging && ringType === "circle"
-                                  ? `1px solid grey`
-                                  : "",
+                               isDragging &&
+                               ringType === "circle" 
+                               ? "1px solid white"
+                               : "",
+                          
+                          
+                             borderRadius:
+                              isDragging &&
+                              ringType === "circle" 
+                                ? "50%"
+                                : "",
+
+                             background:
+                              isDragging &&
+                              ringType === "circle" 
+                                ? "rgba(255, 255, 255, 0.5)"
+                                : "transparent",
                             }}
                           >
                             <DroppableComp
@@ -17869,10 +17882,24 @@ const View = () => {
                             position: "absolute",
                             top: `${p.y}px`,
                             left: `${p.x}px`,
-                            border:
-                              isDragging && ringType === "dot"
-                                ? `1px solid grey`
+                              border:
+                               isDragging &&
+                               ringType === "dot" 
+                               ? "1px solid white"
+                               : "",
+                          
+                          
+                             borderRadius:
+                              isDragging &&
+                              ringType === "dot" 
+                                ? "50%"
                                 : "",
+
+                             background:
+                              isDragging &&
+                              ringType === "dot" 
+                                ? "rgba(255, 255, 255, 0.5)"
+                                : "transparent",
                           }}
                         >
                           <DroppableDotComp
@@ -17943,21 +17970,23 @@ const View = () => {
                             top: `${p.y}px`,
                             left: `${p.x}px`,
                             border:
-                              isDragging &&
-                              ringType === "addon" &&
-                              activeAddonPoint === p.id
-                                ? `1px solid white`
-                                : "",
+                            isDragging &&
+                            ringType === "addon" &&
+                            activeAddonPoints.includes(p.id)
+                              ? "1px solid white"
+                              : "",
+                          
+                          
                             borderRadius:
                               isDragging &&
                               ringType === "addon" &&
-                              activeAddonPoint === p.id
+                              activeAddonPoints.includes(p.id)
                                 ? "50%"
                                 : "",
                             background:
                               isDragging &&
                               ringType === "addon" &&
-                              activeAddonPoint === p.id
+                              activeAddonPoints.includes(p.id)
                                 ? "rgba(255, 255, 255, 0.5)"
                                 : "transparent",
                           }}

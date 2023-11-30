@@ -34,14 +34,12 @@ const BuyButton = ({
         ) => {
           const existingIdx = acc.findIndex((p) => p?.id == cur.variantId);
           if (existingIdx != -1) {
-          
             acc = [
               ...acc.slice(0, existingIdx),
               { ...acc[existingIdx], quantity: acc[existingIdx].quantity + 1 },
               ...acc.slice(existingIdx + 1),
             ];
           } else {
-          
             acc = [
               ...acc,
               ...(cur.variantId ? [{ id: cur.variantId, quantity: 1 }] : []),

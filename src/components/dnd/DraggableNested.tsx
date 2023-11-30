@@ -16,14 +16,11 @@ const DraggableNested = ({
   const { attributes, setNodeRef, listeners } = useDraggable({
     id: id.toString(),
   });
-  console.log(data?.imageTransparent,"image")
 
  
-
   return (
     <div className="cursor-pointer product-list mb-5">
       <div className="p-2 bg-gray-100  view-product flex justify-center items-center">
-        {/* {setId.map((id) => ( */}
         <div
           key={id}
           ref={setNodeRef}
@@ -49,7 +46,6 @@ const DraggableNested = ({
             src={data?.imageTransparent}
           />
         </div>
-        {/* ))} */}
       </div>
       <div className="text-left">
         <p className="text-sm truncate lark-berry-vendor ">{data?.vendor}</p>

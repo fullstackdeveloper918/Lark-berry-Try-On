@@ -162,6 +162,7 @@ const Tabs = ({
   // };
 
   const getProductsList = async (title_name: string) => {
+
     try {
       // Show loader
       /* setIsLoading(true); */
@@ -517,11 +518,11 @@ const Tabs = ({
           </div> */}
           </div>
         )}
-        {/* {isMobile && (
+        {isMobile && (
           <div className="tos-buy-btn-mobile lark-berry-button-cover">
             <BuyButton addedProducts={addedProducts} earRef={earRef} />
           </div>
-        )} */}
+        )}
       </InfiniteScroll>
     </div>
   );

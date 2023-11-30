@@ -183,7 +183,7 @@ export function OptionsMenu({ earRef,setCurrentPoint }: { earRef: RefObject<HTML
                 >
                   <h3 className="p-2">Medium</h3>
                 </DropdownMenuItem>
-                <DropdownMenuItem
+                {/* <DropdownMenuItem
                   onClick={() => {
                     setColorComplex("dark");
                   }}
@@ -192,8 +192,8 @@ export function OptionsMenu({ earRef,setCurrentPoint }: { earRef: RefObject<HTML
                   })}
                 >
                   <h3 className="p-2">Dark</h3>
-                </DropdownMenuItem>
-                <DropdownMenuItem
+                </DropdownMenuItem> */}
+                {/* <DropdownMenuItem
                   onClick={() => {
                     setColorComplex("darkest");
                   }}
@@ -202,7 +202,7 @@ export function OptionsMenu({ earRef,setCurrentPoint }: { earRef: RefObject<HTML
                   })}
                 >
                   <h3 className="p-2">Darkest</h3>
-                </DropdownMenuItem>
+                </DropdownMenuItem> */}
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
           </DropdownMenuSub>

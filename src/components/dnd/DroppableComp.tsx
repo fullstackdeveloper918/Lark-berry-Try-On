@@ -8,8 +8,7 @@ interface DroppableProps {
 
 const DroppableComp = ({ id, ringType,children }: DroppableProps) => {
   const { isOver, setNodeRef } = useDroppable({
-    id,
-      
+    id,     
   });
  
   return (
@@ -21,7 +20,8 @@ const DroppableComp = ({ id, ringType,children }: DroppableProps) => {
         width: "50px",
         position: "relative",
         // border: '1px solid ',
-        borderColor: isOver && ringType === "circle" ? "#4c9ffe" : "transparent",
+        borderColor: isOver && ringType === "circle" ? "#rgba(255, 255, 255, 0.5)" : "transparent",
+        borderRadius : isOver && ringType === "circle" ? "50%" : ""
         // borderColor: "#4c9ffe",
       }}
       ref={setNodeRef}
@@ -47,7 +47,8 @@ export const DroppableDotComp = ({ id,  ringType,children}: DroppableProps) => {
         height: "50px",
         width: "50px",
         position: "relative",
-        borderColor: isOver && ringType == "dot" ? "yellow": "transparent",
+        borderColor: isOver && ringType === "dot" ? "rgba(255, 255, 255, 0.5)": "transparent",
+        borderRadius : isOver && ringType === "dot" ? "50%" : ""
         //  borderColor: "#4c9ffe",
            
       }}
@@ -74,9 +75,9 @@ export const DroppableAddOnComp = ({ id,ringType, children }: DroppableProps) =>
         height: "45px",
         width: "45px",
         position: "relative",
-        borderColor: isOver && ringType == "addon" ? "green": "transparent",
+        borderColor: isOver && ringType === "addon" ? "rgba(255, 255, 255, 0.5)": "transparent",
         // borderColor: "#4c9ffe",
-         borderRadius : "50px"
+         borderRadius : isOver && ringType === "addon" ? "50%" : ""
 
       }}
       ref={setNodeRef}
