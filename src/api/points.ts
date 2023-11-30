@@ -127,7 +127,7 @@ export const dropPointsRightAddOnRight = [
   },
   {
     id: "B1",
-    x: 27,
+    x: 75,
     y: 89,
     disabled: false
   },

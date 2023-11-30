@@ -359,10 +359,9 @@ const View = () => {
     },
   });
 
- 
   const keyboardSensor = useSensor(KeyboardSensor, {});
   const sensors = useSensors(mouseSensor, touchSensor, keyboardSensor);
-
+ 
   const corresponsingPosMap: any = {
     A1: "A",
     B1: "B",
@@ -10517,7 +10516,7 @@ const View = () => {
                     size === "large"
                       ? "translate(-65px, 44px) rotate(64deg)"
                       : size === "small"
-                      ? "translate(4px, -3px) rotate(-4deg)"
+                      ? "translate(12px, 11px) rotate(5deg)"
                       : "translate(-65px, 44px) rotate(64deg)";
                   width =
                     size === "large"
@@ -10529,7 +10528,7 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 27%, 14% 0px, 29% 26%, 60% 15%, 47% 0px, 91% 0px, 97% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 50%)"
+                      ? "polygon(0px 27%, 13% 0px, 29% 26%, 66% 15%, 52% 0px, 91% 0px, 97% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 50%)"
                       : "";
                   break;
                 case "ENTRANCING":
@@ -10537,19 +10536,19 @@ const View = () => {
                     size === "large"
                       ? "translate(5px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(0px, -2px) rotate(0deg)"
+                      ? "translate(5px, 10px) rotate(0deg)"
                       : "translate(5px, -6px) rotate(0deg)";
                   width =
                     size === "large"
                       ? "24px"
                       : size === "small"
-                      ? "30px"
+                      ? "35px"
                       : "23px";
                   clipPath =
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 27%, 14% 3px, 40% 27%, 60% 15%, 47% 0px, 91% 0px, 97% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 50%)"
+                      ? " polygon(0 0, 34% 0, 40% 23%, 59% 23%, 66% 0, 100% 1%, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 43%)"
                       : "";
                   break;
                 case "CROSS":
@@ -10557,7 +10556,7 @@ const View = () => {
                     size === "large"
                       ? "translate(7px, -7px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(5px, -2.1px) rotate(0deg)"
+                      ? "translate(14px, 9.9px) rotate(0deg)"
                       : "translate(7px, -7px) rotate(0deg)";
                   width =
                     size === "large"
@@ -10569,75 +10568,75 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 27%, 14% 3px, 38% 28%, 60% 15%, 47% 0px, 91% 0px, 97% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 50%)"
+                      ? "polygon(0px 27%, 14% 3px, 38% 28%, 60% 15%, 62% 0px, 91% 0px, 97% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 50%)"
                       : "";
                   break;
                 case "PEACE":
                   transform =
                     size === "large"
-                      ? "translate(5px, -1px) rotate(0deg)"
+                      ? "translate(5px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(0px, -2px) rotate(0deg)"
-                      : "translate(5px, -1px) rotate(0deg)";
+                      ? "translate(5px, 10px) rotate(0deg)"
+                      : "translate(5px, -6px) rotate(0deg)";
                   width =
                     size === "large"
-                      ? "22px"
+                      ? "24px"
                       : size === "small"
-                      ? "30px"
-                      : "22px";
+                      ? "35px"
+                      : "23px";
                   clipPath =
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 27%, 14% 3px, 19% 25%, 60% 15%, 47% 0px, 91% 0px, 97% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 50%)"
+                      ? " polygon(0 0, 34% 0, 40% 23%, 59% 23%, 66% 0, 100% 1%, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 43%)"
                       : "";
                   break;
                 case "SHOOTING":
                   transform =
-                    size === "large"
-                      ? "translate(9px, -6px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(-1px, -2px) rotate(12deg)"
-                      : "translate(9px, -6px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "30px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 1%, 25% 17%, 46% 12%, 34% 0px, 78% 0px, 100% 0px, 100% 48%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)"
-                      : "";
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(8px, 12px) rotate(11deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "35px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 5% 0px, 23% 15%, 34% 16%, 43% -7px, 99% 0px, 100% 48%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
+                    : "";
                   break;
                 case "SHOOTINGOLD":
                   transform =
-                    size === "large"
-                      ? "translate(9px, -6px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(13px, -4px) rotate(0deg)"
-                      : "translate(9px, -6px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "30px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 37%, 2% 16%, 45% 20%, 28% 0px, 100% 0px, 100% 30%, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
-                      : "";
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(8px, 12px) rotate(11deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "35px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 5% 0px, 23% 15%, 34% 16%, 43% -7px, 99% 0px, 100% 48%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
+                    : "";
                   break;
                 case "DARLING":
                   transform =
                     size === "large"
                       ? "translate(9px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(6px, -3px) rotate(0deg)"
+                      ? "translate(13px, 9px) rotate(0deg)"
                       : "translate(9px, -6px) rotate(0deg)";
                   width =
                     size === "large"
@@ -10649,35 +10648,35 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 25%, -15% -4px, 28% 22%, 78% 19%, 44% 0px, 100% 0px, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
+                      ? "polygon(0px 0px, 17% 0px, 37% 24%, 83% 21%, 70% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 46%)"
                       : "";
                   break;
                 case "PRECIOUS":
                   transform =
-                    size === "large"
-                      ? "translate(8px, -6px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(6px, -3px) rotate(0deg)"
-                      : "translate(17px, -4px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "18px"
-                      : size === "small"
-                      ? "18px"
-                      : "18px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 25%, -10% -4px, 28% 22%, 78% 19%, 44% 0px, 100% 0px, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
-                      : "";
+                  size === "large"
+                    ? "translate(9px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(13px, 9px) rotate(0deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "18px"
+                    : size === "small"
+                    ? "18px"
+                    : "18px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 17% 0px, 37% 24%, 83% 21%, 70% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 46%)"
+                    : "";
                   break;
                 case "MARVELOUS":
                   transform =
                     size === "large"
                       ? "translate(9px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(-3px, -3px) rotate(0deg)"
+                      ? "translate(5.5px, 11px) rotate(6deg)"
                       : "translate(9px, -6px) rotate(0deg)";
                   width =
                     size === "large"
@@ -10689,75 +10688,75 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0 0, 28% 1%, 46% 21%, 65% 18%, 56% 0, 100% 0, 100% 55%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 39%)"
+                      ? "polygon(0px 0px, 28% 1%, 46% 21%, 71% 18%, 64% 0px, 100% 0px, 100% 55%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 39%)"
                       : "";
                   break;
                 case "PLANET":
                   transform =
-                    size === "large"
-                      ? "translate(7px, -6px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(1px, -2px) rotate(0deg)"
-                      : "translate(7px, -6px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "25px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(51% 1px, 84% -3px, 99% 51%, 93% 88%, 78% 94%, 68% 102%, 26% 97%, -4% 75%, 10% 3px, 66% 29%)"
-                      : "";
+                  size === "large"
+                    ? "translate(9px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(5.5px, 11px) rotate(6deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "22px"
+                    : size === "small"
+                    ? "30px"
+                    : "22px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 28% 1%, 46% 21%, 71% 18%, 64% 0px, 100% 0px, 100% 55%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 39%)"
+                    : "";
                   break;
                 case "PEACESIGN":
                   transform =
-                    size === "large"
-                      ? "translate(5px, -7px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(0px, -3px) rotate(3deg)"
-                      : "translate(5px, -7px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "25px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(4px 29%, -8px 22%, 63% 21%, 41% 0px, 100% 0px, 100% 25%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)"
-                      : "";
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(5px, 10px) rotate(0deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "35px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? " polygon(0 0, 34% 0, 40% 23%, 59% 23%, 66% 0, 100% 1%, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 43%)"
+                    : "";
                   break;
                 case "HAND":
                   transform =
-                    size === "large"
-                      ? "translate(5px, -7px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(0px, -3px) rotate(0deg)"
-                      : "translate(5px, -7px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "30px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 26%, -4% 13%, 60% 23%, 41% -4px, 94% -4px, 100% 26%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)"
-                      : "";
+                  size === "large"
+                    ? "translate(9px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(7.5px, 11px) rotate(1deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "22px"
+                    : size === "small"
+                    ? "30px"
+                    : "22px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 28% 1%, 46% 21%, 71% 7%, 67% 0px, 100% 0px, 100% 55%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 39%)"
+                    : "";
                   break;
                 case "CELESTIAL":
                   transform =
                     size === "large"
                       ? "translate(5px, -7px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(2px, -3px) rotate(0deg)"
+                      ? "translate(8px, 10px) rotate(0deg)"
                       : "translate(5px, -7px) rotate(0deg)";
                   width =
                     size === "large"
@@ -10769,29 +10768,28 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0 23%, 0 10%, 43% 17%, 51% 9%, 37% 0, 100% 0, 100% 47%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 50%)"
+                      ? "polygon(0px 0px, 23% 0px, 41% 16%, 60% 18%, 68% 0px, 100% 0px, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 46%)"
                       : "";
                   break;
                 case "SUMMER":
                   transform =
-                    size === "large"
-                      ? "translate(5px, -7px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(-1px, -2px) rotate(0deg)"
-                      : "translate(5px, -7px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "30px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 18%, -8px 7%, 62% 22%, 50% 0px, 100% 0px, 100% 25%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)"
-                      : "";
-
+                  size === "large"
+                    ? "translate(9px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(5.5px, 11px) rotate(1deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "22px"
+                    : size === "small"
+                    ? "35px"
+                    : "22px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 28% 1%, 46% 21%, 63% 7%, 67% 0px, 100% 0px, 100% 55%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 39%)"
+                    : "";
                   break;
                 default:
                   transform =
@@ -11727,7 +11725,7 @@ const View = () => {
                     size === "large"
                       ? "translate(-65px, 44px) rotate(64deg)"
                       : size === "small"
-                      ? "translate(12px, 4px) rotate(2deg)"
+                      ? "translate(7px, 3px) rotate(2deg)"
                       : "translate(-65px, 44px) rotate(64deg)";
                   width =
                     size === "large"
@@ -11739,7 +11737,7 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 20%, 36% 29%, 49% 11%, 9px 1%, 66% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)"
+                      ? "polygon(0 0, 71% 0, 41% 12%, 63% 27%, 92% 10%, 100% 0, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 47%)"
                       : "";
                   break;
                 case "ENTRANCING":
@@ -11747,19 +11745,19 @@ const View = () => {
                     size === "large"
                       ? "translate(5px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(7px, 5px) rotate(2deg)"
+                      ? "translate(4px, 3px) rotate(2deg)"
                       : "translate(5px, -6px) rotate(0deg)";
                   width =
                     size === "large"
                       ? "24px"
                       : size === "small"
-                      ? "30px"
+                      ? "35px"
                       : "23px";
                   clipPath =
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 23%, 48% 29%, 49% 9%, 15px 1%, 67% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)"
+                      ? "polygon(0px 0px, 56% 0px, 42% 7%, 50% 27%, 92% 10%, 100% 0px, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 47%)"
                       : "";
                   break;
                 case "CROSS":
@@ -11767,7 +11765,7 @@ const View = () => {
                     size === "large"
                       ? "translate(7px, -7px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(10px, 3.9px) rotate(2deg)"
+                      ? "translate(9px, 2px) rotate(1deg)"
                       : "translate(7px, -7px) rotate(0deg)";
                   width =
                     size === "large"
@@ -11779,47 +11777,47 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0 0, 11% 6%, 30% 23%, 58% 11%, 42% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 49%)"
+                      ? "polygon(0px 0px, 63% 0px, 41% 12%, 50% 27%, 92% 10%, 100% 0px, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 47%)"
                       : "";
                   break;
                 case "PEACE":
                   transform =
-                    size === "large"
-                      ? "translate(7px, -6px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(5px, 2px) rotate(0deg)"
-                      : "translate(7px, -6px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "30px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 24%, -3px 8px, 56% 17%, 51% 0px, 100% 1px, 100% 35%, 100% 54%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 46%)"
-                      : "";
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(4px, 3px) rotate(2deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "35px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 56% 0px, 42% 7%, 40% 17%, 92% 10%, 100% 0px, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 47%)"
+                    : "";
                   break;
                 case "SHOOTING":
                   transform =
                     size === "large"
                       ? "translate(9px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(8px, 6px) rotate(16deg)"
+                      ? "translate(5px, 2px) rotate(16deg)"
                       : "translate(9px, -6px) rotate(0deg)";
                   width =
                     size === "large"
                       ? "22px"
                       : size === "small"
-                      ? "30px"
+                      ? "35px"
                       : "22px";
                   clipPath =
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 29%, 3% 17%, 41% 18%, 22% -1px, 98% 2px, 100% 30%, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
+                      ? "polygon(0px 29%, 23% 0%, 41% 18%, 58% -1px, 98% 2px, 100% 30%, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
                       : "";
                   break;
                 case "SHOOTINGOLD":
@@ -11827,19 +11825,19 @@ const View = () => {
                   size === "large"
                     ? "translate(9px, -6px) rotate(0deg)"
                     : size === "small"
-                    ? "translate(8px, 6px) rotate(16deg)"
+                    ? "translate(5px, 2px) rotate(16deg)"
                     : "translate(9px, -6px) rotate(0deg)";
                 width =
                   size === "large"
                     ? "22px"
                     : size === "small"
-                    ? "30px"
+                    ? "35px"
                     : "22px";
                 clipPath =
                   size === "large"
                     ? ""
                     : size === "small"
-                    ? "polygon(0px 29%, 3% 22%, 41% 18%, 22% -1px, 98% 2px, 100% 30%, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
+                    ? "polygon(0px 29%, 23% 0%, 41% 18%, 58% -1px, 98% 2px, 100% 30%, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
                     : "";
                   break;
                 case "DARLING":
@@ -11847,7 +11845,7 @@ const View = () => {
                     size === "large"
                       ? "translate(9px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(16px, 2px) rotate(0deg)"
+                      ? "translate(12px, 2px) rotate(0deg)"
                       : "translate(9px, -6px) rotate(0deg)";
                   width =
                     size === "large"
@@ -11859,96 +11857,36 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 22%, -18% 9px, 37% 28%, 73% 16%, 11% 0px, 100% 0px, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
+                      ? "polygon(0px 0px, 60% 0px, 50% 23%, 73% 20%, 100% 9%, 100% 39%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 45%)"
                       : "";
                   break;
                 case "PRECIOUS":
                   transform =
-                  size === "large"
-                    ? "translate(9px, -6px) rotate(0deg)"
-                    : size === "small"
-                    ? "translate(16px, 2px) rotate(0deg)"
-                    : "translate(9px, -6px) rotate(0deg)";
-                width =
-                  size === "large"
-                    ? "18px"
-                    : size === "small"
-                    ? "18px"
-                    : "18px";
-                clipPath =
-                  size === "large"
-                    ? ""
-                    : size === "small"
-                    ? "polygon(0px 22%, -18% 9px, 53% 27%, 73% 16%, 11% 0px, 100% 0px, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
-                    : "";
+                    size === "large"
+                      ? "translate(9px, -6px) rotate(0deg)"
+                      : size === "small"
+                      ? "translate(12px, 2px) rotate(0deg)"
+                      : "translate(9px, -6px) rotate(0deg)";
+                  width =
+                    size === "large"
+                      ? "18px"
+                      : size === "small"
+                      ? "18px"
+                      : "18px";
+                  clipPath =
+                    size === "large"
+                      ? ""
+                      : size === "small"
+                      ? "polygon(0px 0px, 60% 0px, 50% 23%, 73% 20%, 100% 9%, 100% 39%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 45%)"
+                      : "";
                   break;
                 case "MARVELOUS":
                   transform =
                     size === "large"
                       ? "translate(9px, -6px) rotate(0deg)"
                       : size === "small"
-                      ? "translate(3.5px, 0px) rotate(6deg)"
+                      ? "translate(0.5px, 0px) rotate(6deg)"
                       : "translate(9px, -6px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "30px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 29%, -22px 20%, 61% 20%, 45% 0px, 100% 0px, 100% 25%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
-                      : "";
-                  break;
-                case "PLANET":
-                  transform =
-                    size === "large"
-                      ? "translate(9px, -6px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(3.5px, 0px) rotate(6deg)"
-                      : "translate(9px, -6px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "30px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 29%, -22px 20%, 61% 20%, 45% 0px, 100% 0px, 100% 25%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
-                      : "";
-                  break;
-                case "PEACESIGN":
-                  transform =
-                  size === "large"
-                    ? "translate(7px, -6px) rotate(0deg)"
-                    : size === "small"
-                    ? "translate(5px, 2px) rotate(0deg)"
-                    : "translate(7px, -6px) rotate(0deg)";
-                width =
-                  size === "large"
-                    ? "22px"
-                    : size === "small"
-                    ? "30px"
-                    : "22px";
-                clipPath =
-                  size === "large"
-                    ? ""
-                    : size === "small"
-                    ? "polygon(0px 24%, -3px 8px, 56% 17%, 51% 0px, 100% 1px, 100% 35%, 100% 54%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 46%)"
-                    : "";
-                  break;
-                case "HAND":
-                  transform =
-                    size === "large"
-                      ? "translate(5px, -7px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(8px, 5px) rotate(0deg)"
-                      : "translate(5px, -7px) rotate(0deg)";
                   width =
                     size === "large"
                       ? "22px"
@@ -11959,36 +11897,16 @@ const View = () => {
                     size === "large"
                       ? ""
                       : size === "small"
-                      ? "polygon(0px 26%, -4% 12%, 55% 23%, 36% -4px, 94% -4px, 100% 26%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)"
+                      ? "polygon(1% 0, 60% 0, 43% 9%, 64% 19%, 100% 0, 100% 27%, 100% 52%, 100% 100%, 65% 100%, 35% 100%, 0 99%, 0 49%)"
                       : "";
                   break;
-                case "CELESTIAL":
-                  transform =
-                    size === "large"
-                      ? "translate(5px, -7px) rotate(0deg)"
-                      : size === "small"
-                      ? "translate(7px, 2.5px) rotate(0deg)"
-                      : "translate(5px, -7px) rotate(0deg)";
-                  width =
-                    size === "large"
-                      ? "22px"
-                      : size === "small"
-                      ? "30px"
-                      : "22px";
-                  clipPath =
-                    size === "large"
-                      ? ""
-                      : size === "small"
-                      ? "polygon(0px 23%, 0px 12%, 41% 20%, 57% 8%, 44% 0px, 100% 0px, 100% 47%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 50%)"
-                      : "";
-                  break;
-                case "SUMMER":
+                case "PLANET":
                   transform =
                   size === "large"
-                    ? "translate(5px, -7px) rotate(0deg)"
+                    ? "translate(9px, -6px) rotate(0deg)"
                     : size === "small"
-                    ? "translate(8px, 5px) rotate(0deg)"
-                    : "translate(5px, -7px) rotate(0deg)";
+                    ? "translate(2.5px, 0px) rotate(6deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
                 width =
                   size === "large"
                     ? "22px"
@@ -11999,11 +11917,89 @@ const View = () => {
                   size === "large"
                     ? ""
                     : size === "small"
-                    ? "polygon(0px 26%, -4% 12%, 55% 23%, 36% -4px, 94% -4px, 100% 26%, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)"
+                    ? "polygon(1% 3px, 50% 0px, 48% 9%, 64% 19%, 100% 0px, 100% 27%, 100% 52%, 100% 100%, 65% 100%, 35% 100%, 0px 99%, 0px 49%)"
                     : "";
-
                   break;
-
+                case "PEACESIGN":
+                  transform =
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(4px, 3px) rotate(2deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "35px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 56% 0px, 42% 7%, 40% 17%, 92% 10%, 100% 0px, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 47%)"
+                    : "";
+                  break;
+                case "HAND":
+                  transform =
+                  size === "large"
+                    ? "translate(9px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(3.5px, 3px) rotate(1deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "22px"
+                    : size === "small"
+                    ? "35px"
+                    : "22px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(1% 0, 60% 0, 43% 9%, 64% 19%, 100% 0, 100% 27%, 100% 52%, 100% 100%, 65% 100%, 35% 100%, 0 99%, 0 49%)"
+                    : "";
+                  break;
+                case "CELESTIAL":
+                  transform =
+                  size === "large"
+                    ? "translate(7px, -7px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(5px, 2px) rotate(1deg)"
+                    : "translate(7px, -7px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "22px"
+                    : size === "small"
+                    ? "30px"
+                    : "22px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 63% 0px, 41% 12%, 50% 27%, 92% 10%, 100% 0px, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 47%)"
+                    : "";
+                  break;
+                case "SUMMER":
+                  transform =
+                  size === "large"
+                    ? "translate(9px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(3px, 3px) rotate(1deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "22px"
+                    : size === "small"
+                    ? "37px"
+                    : "22px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(1% 0, 60% 0, 43% 9%, 64% 19%, 100% 0, 100% 27%, 100% 52%, 100% 100%, 65% 100%, 35% 100%, 0 99%, 0 49%)"
+                    : "";
+                  break;
                 default:
                   transform =
                   size === "large"
@@ -12019,16 +12015,301 @@ const View = () => {
               break;
              
             default:
-              transform =
-                size === "large"
-                  ? "translate(11px, 12px)"
-                  : size === "small"
-                  ? "translate(4px, 11px)"
-                  : "translate(11px, 14px)";
-
-              width =
-                size === "large" ? "27px" : size === "small" ? "22px" : "25px";
+              switch (earringType) {
+                case "TRIODIAMOND":
+                  transform =
+                    size === "large"
+                      ? "translate(-65px, 44px) rotate(64deg)"
+                      : size === "small"
+                      ? "translate(10px, 12px) rotate(2deg)"
+                      : "translate(-65px, 44px) rotate(64deg)";
+                  width =
+                    size === "large"
+                      ? "50px"
+                      : size === "small"
+                      ? "24px"
+                      : "40px";
+                  clipPath =
+                    size === "large"
+                      ? ""
+                      : size === "small"
+                      ? "polygon(0px 0px, 33% 0px, 27% 24%, 68% 34%, 76% 9%, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 53%)"
+                      : "";
+                  break;
+                case "ENTRANCING":
+                  transform =
+                    size === "large"
+                      ? "translate(5px, -6px) rotate(0deg)"
+                      : size === "small"
+                      ? "translate(3px, 10px) rotate(2deg)"
+                      : "translate(5px, -6px) rotate(0deg)";
+                  width =
+                    size === "large"
+                      ? "24px"
+                      : size === "small"
+                      ? "40px"
+                      : "23px";
+                  clipPath =
+                    size === "large"
+                      ? ""
+                      : size === "small"
+                      ? "polygon(0 0, 36% 0, 39% 25%, 61% 23%, 65% 0, 100% 0, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 49%)"
+                      : "";
+                  break;
+                case "CROSS":
+                  transform =
+                    size === "large"
+                      ? "translate(7px, -7px) rotate(0deg)"
+                      : size === "small"
+                      ? "translate(8px, 13px) rotate(1deg)"
+                      : "translate(7px, -7px) rotate(0deg)";
+                  width =
+                    size === "large"
+                      ? "22px"
+                      : size === "small"
+                      ? "24px"
+                      : "22px";
+                  clipPath =
+                    size === "large"
+                      ? ""
+                      : size === "small"
+                      ? "polygon(0px 0px, 36% 0px, 39% 25%, 65% 30%, 98% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
+                      : "";
+                  break;
+                case "PEACE":
+                  transform =
+                    size === "large"
+                      ? "translate(5px, -6px) rotate(0deg)"
+                      : size === "small"
+                      ? "translate(2px, 10px) rotate(2deg)"
+                      : "translate(5px, -6px) rotate(0deg)";
+                  width =
+                    size === "large"
+                      ? "24px"
+                      : size === "small"
+                      ? "40px"
+                      : "23px";
+                  clipPath =
+                    size === "large"
+                      ? ""
+                      : size === "small"
+                      ? "polygon(0 0, 36% 0, 39% 25%, 61% 23%, 65% 0, 100% 0, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 49%)"
+                      : "";
+                  break;
+                case "SHOOTING":
+                  transform =
+                    size === "large"
+                      ? "translate(9px, -6px) rotate(0deg)"
+                      : size === "small"
+                      ? "translate(3px, 12px) rotate(16deg)"
+                      : "translate(9px, -6px) rotate(0deg)";
+                  width =
+                    size === "large"
+                      ? "22px"
+                      : size === "small"
+                      ? "37px"
+                      : "22px";
+                  clipPath =
+                    size === "large"
+                      ? ""
+                      : size === "small"
+                      ? "polygon(0px 29%, -12% 0%, 44% 18%, 58% -1px, 98% 2px, 100% 30%, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
+                      : "";
+                  break;
+                case "SHOOTINGOLD":
+                  transform =
+                  size === "large"
+                    ? "translate(9px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(0px, 12px) rotate(16deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "22px"
+                    : size === "small"
+                    ? "37px"
+                    : "22px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 29%, 22% 0%, 41% 18%, 68% 2px, 96% 2px, 100% 30%, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 48%)"
+                    : "";
+                  break;
+                case "DARLING":
+                  transform =
+                    size === "large"
+                      ? "translate(9px, -6px) rotate(0deg)"
+                      : size === "small"
+                      ? "translate(12px, 12px) rotate(0deg)"
+                      : "translate(9px, -6px) rotate(0deg)";
+                  width =
+                    size === "large"
+                      ? "18px"
+                      : size === "small"
+                      ? "18px"
+                      : "18px";
+                  clipPath =
+                    size === "large"
+                      ? ""
+                      : size === "small"
+                      ? "polygon(0 0, 33% 0, 21% 23%, 78% 27%, 91% 7%, 100% 0, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 50%)"
+                      : "";
+                  break;
+                case "PRECIOUS":
+                  transform =
+                  size === "large"
+                    ? "translate(9px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(12px, 12px) rotate(0deg)"
+                    : "translate(9px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "18px"
+                    : size === "small"
+                    ? "18px"
+                    : "18px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0 0, 33% 0, 21% 23%, 78% 27%, 91% 7%, 100% 0, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 50%)"
+                    : "";
+                  break;
+                case "MARVELOUS":
+                  transform =
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(-1px, 12px) rotate(2deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "40px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 36% 0px, 66% 25%, 63% 23%, 75% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
+                    : "";
+                  break;
+                case "PLANET":
+                  transform =
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(-1px, 12px) rotate(2deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "40px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 36% 0px, 66% 25%, 63% 23%, 75% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
+                    : "";
+                  break;
+                case "PEACESIGN":
+                  transform =
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(2px, 10px) rotate(2deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "40px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0 0, 36% 0, 39% 25%, 61% 23%, 65% 0, 100% 0, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 49%)"
+                    : "";
+                  break;
+                case "HAND":
+                  transform =
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(0px, 12px) rotate(2deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "40px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 31% 0px, 66% 25%, 63% 23%, 75% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
+                    : "";
+                  break;
+                case "CELESTIAL":
+                  transform =
+                  size === "large"
+                    ? "translate(7px, -7px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(5px, 12px) rotate(1deg)"
+                    : "translate(7px, -7px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "22px"
+                    : size === "small"
+                    ? "30px"
+                    : "22px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 41% 0px, 39% 25%, 65% 19%, 98% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
+                    : "";
+                  break;
+                case "SUMMER":
+                  transform =
+                  size === "large"
+                    ? "translate(5px, -6px) rotate(0deg)"
+                    : size === "small"
+                    ? "translate(0px, 13px) rotate(2deg)"
+                    : "translate(5px, -6px) rotate(0deg)";
+                width =
+                  size === "large"
+                    ? "24px"
+                    : size === "small"
+                    ? "40px"
+                    : "23px";
+                clipPath =
+                  size === "large"
+                    ? ""
+                    : size === "small"
+                    ? "polygon(0px 0px, 30% 0px, 66% 25%, 64% 23%, 74% 0px, 100% 0px, 100% 51%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 49%)"
+                    : "";
+                  break;
+                default:
+                  transform =
+                  size === "large"
+                    ? "translate(11px, 12px)"
+                    : size === "small"
+                    ? "translate(4px, 11px)"
+                    : "translate(11px, 14px)";
+  
+                width =
+                  size === "large" ? "27px" : size === "small" ? "22px" : "25px";
+                break;
+              }
               break;
+             
           }
           break;
         case "DotF":
@@ -12230,205 +12511,7 @@ const View = () => {
               break;
           }
           break;
-        // case "F1":
-        //   switch (earringType) {
-        //     case "TRIODIAMOND":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(11px, 7px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(12px, 7px) rotate(0deg)"
-        //           : "translate(11px, 7px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "24px" : size === "small" ? "22px" : "23px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "ENTRANCING":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px, 10px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(11px, 10px) rotate(0deg)"
-        //           : "translate(12px, 10px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "25px" : size === "small" ? "25px" : "25px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "CROSS":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px, 6px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(12px, 6px) rotate(0deg)"
-        //           : "translate(12px, 6px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "PEACE":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px,9px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(12px, 9px) rotate(0deg)"
-        //           : "translate(12px, 9px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "SHOOTING":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(16px, 10px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(16px, 10px) rotate(0deg)"
-        //           : "translate(16px, 10px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(33% 21px, 46% 2px, 97% 33%, 100% 73%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "PRECIOUS":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px,9px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(16px, 8px) rotate(0deg)"
-        //           : "translate(12px, 9px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "17px" : size === "small" ? "15px" : "17px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "DARLING":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px,9px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(15px, 8px) rotate(0deg)"
-        //           : "translate(12px, 9px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "15px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(48% 9px, 83% -2px, 100% 52%, 100% 73%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "MARVELOUS":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(13px, 10px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(13px, 10px) rotate(0deg)"
-        //           : "translate(13px, 10px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(45% 3px, 83% -2px, 100% 52%, 100% 73%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "PLANET":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(13px, 11px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(13px, 11px) rotate(0deg)"
-        //           : "translate(13px, 11px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "PEACESIGN":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px, 9px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(12px, 9px) rotate(0deg)"
-        //           : "translate(12px, 9px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "HAND":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px, 9px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(12px, 9px) rotate(0deg)"
-        //           : "translate(12px, 9px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "CELESTIAL":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px, 8px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(12px, 8px) rotate(0deg)"
-        //           : "translate(12px, 8px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //     case "SUMMER":
-        //       transform =
-        //         size === "large"
-        //           ? "translate(12px, 10px) rotate(0deg)"
-        //           : size === "small"
-        //           ? "translate(12px, 10px) rotate(0deg)"
-        //           : "translate(12px, 10px) rotate(0deg)";
-        //       width =
-        //         size === "large" ? "22px" : size === "small" ? "22px" : "22px";
-        //       size === "large"
-        //         ? ""
-        //         : size === "small"
-        //         ? "polygon(99% -114px, 72% 0px, 103% 38%, 100% 71%, 88% 94%, 78% 100%, 11% 101%, 0% 48%, -30% 0px, 59% 22%)"
-        //         : "";
-        //       break;
-        //   }
-        //   break;
+        
         default:
       }
     } else {
@@ -14162,7 +14245,7 @@ const View = () => {
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(21px, -4px) rotate(0deg)"
+                  ? "translate(17px, 6px) rotate(0deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
                 size === "large" ? "24px" : size === "small" ? "20px" : "23px";
@@ -14176,7 +14259,7 @@ const View = () => {
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(18px, -2px) rotate(0deg)"
+                  ? "translate(14px, 7px) rotate(3deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
                 size === "large" ? "24px" : size === "small" ? "25px" : "23px";
@@ -14190,7 +14273,7 @@ const View = () => {
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(22.5px, -2px) rotate(0deg)"
+                  ? "translate(18.5px, 7px) rotate(0deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
                 size === "large" ? "24px" : size === "small" ? "15px" : "23px";
@@ -14204,7 +14287,7 @@ const View = () => {
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(18px, -2px) rotate(0deg)"
+                  ? "translate(14.5px, 7px) rotate(0deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
                 size === "large" ? "24px" : size === "small" ? "25px" : "23px";
@@ -14218,7 +14301,7 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(19px, -4px) rotate(11deg)"
+                ? "translate(15px, 8px) rotate(12deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
@@ -14232,7 +14315,7 @@ const View = () => {
               size === "large"
                 ? "translate(12px, 1px) rotate(2deg)"
                 : size === "small"
-                ? "translate(22px, -3px) rotate(2deg)"
+                ? "translate(19px, 6px) rotate(2deg)"
                 : "translate(12px, 1px) rotate(2deg)";
             width =
               size === "large" ? "18px" : size === "small" ? "15px" : "18px";
@@ -14246,7 +14329,7 @@ const View = () => {
               size === "large"
                 ? "translate(12px, 1px) rotate(2deg)"
                 : size === "small"
-                ? "translate(23px, -4px) rotate(2deg)"
+                ? "translate(19px, 6px) rotate(2deg)"
                 : "translate(12px, 1px) rotate(2deg)";
             width =
               size === "large" ? "18px" : size === "small" ? "15px" : "18px";
@@ -14260,13 +14343,13 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(18px, -2px) rotate(0deg)"
+                ? "translate(13px, 6px) rotate(2deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
               clipPath =
               size === "large" ?
-               "" :  size === "small" ?  "polygon(2% 0px, 41% 0px, 36% 32%, 55% 18%, 59% 1px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+               "" :  size === "small" ?  "polygon(2% 0px, 41% 0px, 55% 32%, 55% 16%, 59% 1px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
                :  ""
               break ;  
               case"PLANET" :
@@ -14274,13 +14357,13 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(18px, -2px) rotate(0deg)"
+                ? "translate(13px, 6px) rotate(2deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
               clipPath =
               size === "large" ?
-               "" :  size === "small" ?  "polygon(2% 0px, 41% 0px, 36% 32%, 55% 18%, 59% 1px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+               "" :  size === "small" ?  "polygon(2% 0px, 41% 0px, 55% 32%, 55% 16%, 59% 1px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
                :  ""
                 break ;      
               case"PEACESIGN" :
@@ -14288,7 +14371,7 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(18px, -2px) rotate(0deg)"
+                ? "translate(14.5px, 7px) rotate(0deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
@@ -14302,7 +14385,7 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(18px, -2px) rotate(0deg)"
+                ? "translate(14px, 7px) rotate(0deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
@@ -14316,7 +14399,7 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(20px, -2px) rotate(0deg)"
+                ? "translate(16px, 6px) rotate(0deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "20px" : "23px";
@@ -14330,13 +14413,13 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(18px, -2px) rotate(0deg)"
+                ? "translate(14px, 6px) rotate(0deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
               clipPath =
               size === "large" ?
-               "" :  size === "small" ?  "polygon(2% 0px, 41% 0px, 36% 26%, 53% 17%, 57% 1px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+               "" :  size === "small" ?  "polygon(2% 0px, 41% 0px, 43% 26%, 53% 17%, 57% 1px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
                :  ""
              break ;     
               default : 
@@ -14364,13 +14447,13 @@ const View = () => {
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(14px, 2px) rotate(0deg)"
+                  ? "translate(14px, -4px) rotate(0deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
                 size === "large" ? "24px" : size === "small" ? "20px" : "23px";
                 clipPath =
                 size === "large" ?
-                 "" :  size === "small" ?  "polygon(2% 0, 11% 23%, 33% 25%, 51% 10%, 17% 0, 100% 0, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 51%)" 
+                 "" :  size === "small" ?  "polygon(2% 0px, 11% 11%, 33% 25%, 56% 10%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
                  :  ""
               break ;    
               case  "ENTRANCING" :
@@ -14378,13 +14461,13 @@ const View = () => {
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(12px, 2px) rotate(0deg)"
+                  ? "translate(14px, -2px) rotate(1deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
-                size === "large" ? "24px" : size === "small" ? "25px" : "23px";
+                size === "large" ? "24px" : size === "small" ? "20px" : "23px";
                 clipPath =
                 size === "large" ?
-                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 38% 33%, 51% 10%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+                 "" :  size === "small" ?  "polygon(2% 0px, 11% 11%, 33% 25%, 56% 10%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
                  :  ""
               break ;   
               case  "CROSS" :
@@ -14392,13 +14475,13 @@ const View = () => {
                 size === "large"
                   ? "translate(8px, -4px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(16px, 2px) rotate(0deg)"
+                  ? "translate(16px, -4px) rotate(0deg)"
                   : "translate(8px, -4px) rotate(0deg)";
               width =
-                size === "large" ? "22px" : size === "small" ? "17px" : "22px";
+                size === "large" ? "22px" : size === "small" ? "15px" : "22px";
                 clipPath =
                 size === "large" ?
-                 "" :  size === "small" ?  "polygon(0 0, 8% 19%, 36% 21%, 63% 9%, 31% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 1% 100%, 0 50%)" 
+                 "" :  size === "small" ?  "polygon(0px 0px, 3% 15%, 36% 22%, 69% 9%, 10% 0px, 100% 0px, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 1% 100%, 0px 50%)" 
                  :  ""
               break ;     
               case  "PEACE" :
@@ -14406,13 +14489,13 @@ const View = () => {
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(12px, 2px) rotate(0deg)"
+                  ? "translate(12px, -2px) rotate(1deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
                 size === "large" ? "24px" : size === "small" ? "25px" : "23px";
                 clipPath =
                 size === "large" ?
-                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 38% 24%, 51% 6%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 56% 24%, 51% 6%, 39% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
                  :  ""
               break ; 
               case"SHOOTING" :
@@ -14420,13 +14503,13 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(16px, 2px) rotate(0deg)"
+                ? "translate(16px, -3px) rotate(0deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
               clipPath =
               size === "large" ?
-               "" :  size === "small" ?  "polygon(2% 0, 8% 20%, 25% 16%, 39% 6%, 15% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 51%)" 
+               "" :  size === "small" ?  "polygon(2% 0, 8% 9%, 25% 16%, 39% 6%, 15% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 0 51%)" 
                :  ""
                 break ;  
               case"PRECIOUS" :
@@ -14434,13 +14517,13 @@ const View = () => {
               size === "large"
                 ? "translate(12px, 1px) rotate(2deg)"
                 : size === "small"
-                ? "translate(18px, 2px) rotate(2deg)"
+                ? "translate(18px, -2px) rotate(2deg)"
                 : "translate(12px, 1px) rotate(2deg)";
             width =
-              size === "large" ? "18px" : size === "small" ? "15px" : "18px";
+              size === "large" ? "18px" : size === "small" ? "12px" : "18px";
               clipPath =
               size === "large" ?
-               "" :  size === "small" ?  "polygon(0 0, 2% 17%, 39% 18%, 69% 11%, 27% 1%, 100% 0, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 1% 100%, 0 50%)" 
+               "" :  size === "small" ?  "polygon(0 0, 2% 11%, 40% 20%, 69% 11%, 27% 1%, 100% 0, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 1% 100%, 0 50%)" 
                :  ""
                break ;      
               case"DARLING" :
@@ -14448,13 +14531,13 @@ const View = () => {
               size === "large"
                 ? "translate(12px, 1px) rotate(2deg)"
                 : size === "small"
-                ? "translate(18px, 2px) rotate(2deg)"
+                ? "translate(18px, -2px) rotate(2deg)"
                 : "translate(12px, 1px) rotate(2deg)";
             width =
-              size === "large" ? "18px" : size === "small" ? "15px" : "18px";
+              size === "large" ? "18px" : size === "small" ? "12px" : "18px";
               clipPath =
               size === "large" ?
-               "" :  size === "small" ?  "polygon(0 0, 2% 19%, 40% 20%, 69% 11%, 27% 1%, 100% 0, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 1% 100%, 0 50%)" 
+               "" :  size === "small" ?  "polygon(0 0, 2% 11%, 40% 20%, 69% 11%, 27% 1%, 100% 0, 100% 49%, 100% 100%, 65% 100%, 35% 100%, 1% 100%, 0 50%)" 
                :  ""
               break ; 
               case"MARVELOUS" :
@@ -14462,13 +14545,13 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(12px, 1px) rotate(0deg)"
+                ? "translate(10px, -3px) rotate(0deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
               clipPath =
               size === "large" ?
-               "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 38% 24%, 51% 6%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+               "" :  size === "small" ?  "polygon(0px 2%, 26% 2%, 45% 19%, 62% 8%, 42% 0px, 100% 0px, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 2% 100%, 0px 47%)" 
                :  ""
               break ;  
               case"PLANET" :
@@ -14476,41 +14559,41 @@ const View = () => {
               size === "large"
                 ? "translate(11px, -3px) rotate(0deg)"
                 : size === "small"
-                ? "translate(12px, 1px) rotate(0deg)"
+                ? "translate(10px, -3px) rotate(0deg)"
                 : "translate(11px, -3px) rotate(0deg)";
             width =
               size === "large" ? "24px" : size === "small" ? "25px" : "23px";
               clipPath =
               size === "large" ?
-               "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 38% 24%, 51% 6%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+               "" :  size === "small" ?  "polygon(0px 2%, 26% 2%, 45% 19%, 62% 8%, 42% 0px, 100% 0px, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 2% 100%, 0px 47%)" 
                :  ""
                 break ;      
               case"PEACESIGN" :
               transform =
-                size === "large"
-                  ? "translate(11px, -3px) rotate(0deg)"
-                  : size === "small"
-                  ? "translate(12px, 2px) rotate(0deg)"
-                  : "translate(11px, -3px) rotate(0deg)";
-              width =
-                size === "large" ? "24px" : size === "small" ? "25px" : "23px";
-                clipPath =
-                size === "large" ?
-                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 38% 24%, 51% 6%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
-                 :  ""
+              size === "large"
+                ? "translate(11px, -3px) rotate(0deg)"
+                : size === "small"
+                ? "translate(12px, -2px) rotate(1deg)"
+                : "translate(11px, -3px) rotate(0deg)";
+            width =
+              size === "large" ? "24px" : size === "small" ? "25px" : "23px";
+              clipPath =
+              size === "large" ?
+               "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 56% 24%, 51% 6%, 39% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+               :  ""
               break ;   
               case"HAND" :
               transform =
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(12px, 2px) rotate(0deg)"
+                  ? "translate(9px, -4px) rotate(0deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
                 size === "large" ? "24px" : size === "small" ? "25px" : "23px";
                 clipPath =
                 size === "large" ?
-                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 38% 24%, 51% 6%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 48% 20%, 54% 2%, 11% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
                  :  ""
               break ;
               case"CELESTIAL" :
@@ -14518,43 +14601,39 @@ const View = () => {
                 size === "large"
                   ? "translate(11px, -3px) rotate(0deg)"
                   : size === "small"
-                  ? "translate(12px, 1px) rotate(0deg)"
+                  ? "translate(11px, -5px) rotate(0deg)"
                   : "translate(11px, -3px) rotate(0deg)";
               width =
                 size === "large" ? "24px" : size === "small" ? "25px" : "23px";
                 clipPath =
                 size === "large" ?
-                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 38% 21%, 51% 6%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 45% 21%, 51% 6%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
                  :  ""
               break ; 
               case"SUMMER" :
               transform =
-                size === "large"
-                  ? "translate(11px, -3px) rotate(0deg)"
-                  : size === "small"
-                  ? "translate(12px, 2px) rotate(0deg)"
-                  : "translate(11px, -3px) rotate(0deg)";
-              width =
-                size === "large" ? "24px" : size === "small" ? "25px" : "23px";
-                clipPath =
-                size === "large" ?
-                 "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 38% 24%, 51% 6%, 17% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
-                 :  ""
+              size === "large"
+                ? "translate(11px, -3px) rotate(0deg)"
+                : size === "small"
+                ? "translate(12px, -3px) rotate(0deg)"
+                : "translate(11px, -3px) rotate(0deg)";
+            width =
+              size === "large" ? "24px" : size === "small" ? "25px" : "23px";
+              clipPath =
+              size === "large" ?
+               "" :  size === "small" ?  "polygon(2% 0px, 0% 0%, 43% 24%, 51% 6%, 11% 0px, 100% 0px, 100% 53%, 100% 100%, 65% 100%, 35% 100%, 0px 100%, 0px 51%)" 
+               :  ""
              break ;     
               default : 
               transform =
               size === "large"
-                ? "translate3d(-10px, 20px, 0px) rotate(-195deg)"
+                ? "translate3d(1px, 12px, 0px) rotate(-121deg)"
                 : size === "small"
                 ? "translate3d(22px, 38px, 0px) rotate(0deg)"
-                : "translate3d(-3px, 20px, 0px) rotate(-130deg)";
+                : "translate3d(1px, 12px, 0px) rotate(-121deg)";
   
             width =
-              size === "large" ? "54px" : size === "small" ? "54px" : "54px";
-              // clipPath =
-              // size === "large" ? "polygon(-10% 86px, 78% -7px, 100% 42%, 100% 71%, 88% 94%, 55% 100%, 27% 97%, -88% 75%, 10% 3px, 66% 29%)" : 
-              // size === "small" ? "" : "polygon(-10% 86px, 78% -7px, 100% 42%, 100% 71%, 88% 94%, 55% 100%, 27% 97%, -88% 75%, 10% 3px, 66% 29%)";
-            
+              size === "large" ? "40px" : size === "small" ? "54px" : "40px";
               break;
           }
          break;
@@ -14651,7 +14730,7 @@ const View = () => {
                 size === "large" ? "22px" : size === "small" ? "17px" : "22px";
                 clipPath =
                 size === "large" ?
-                 "" :  size === "small" ?  "polygon(0 0, 8% 19%, 36% 21%, 63% 9%, 31% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 1% 100%, 0 50%)" 
+                 "" :  size === "small" ?  "polygon(0 0, 8% 22%, 36% 21%, 63% 9%, 31% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%, 35% 100%, 1% 100%, 0 50%)" 
                  :  ""
               break ;     
               case  "PEACE" :
@@ -14797,13 +14876,13 @@ const View = () => {
               default : 
               transform =
               size === "large"
-                ? "translate(4px, 8px) rotate(310deg)"
+                ? "translate(7px, -1px) rotate(316deg)"
                 : size === "small"
-                ? "translate(5px, 8px) rotate(315deg)"
-                : "translate(4px, 8px) rotate(310deg)";
+                ? "translate(7px, -1px) rotate(315deg)"
+                : "translate(7px, -1px) rotate(316deg)";
   
             width =
-              size === "large" ? "28px" : size === "small" ? "27px" : "28px";
+              size === "large" ? "25px" : size === "small" ? "27px" : "25px";
               // clipPath =
               // size === "large" ? "polygon(0 20%, 0 0, 74% 50%, 100% 0, 100% 61%, 63% 47%, 72% 1%, 100% 62%, 100% 100%, 0 99%, 0 62%, 0 51%)" : 
               // size === "small" ? "" : "polygon(0 20%, 0 0, 74% 50%, 100% 0, 100% 61%, 63% 47%, 72% 1%, 100% 62%, 100% 100%, 0 99%, 0 62%, 0 51%)";
